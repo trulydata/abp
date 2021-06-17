@@ -12,6 +12,9 @@
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <RootNamespace />
+    <RepositoryUrl>https://github.com/trulydata/abp</RepositoryUrl>
+    <Description>Build from base abp framework</Description>
+    <Authors>David Ricardo</Authors>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="System.ComponentModel.Annotations" Version="4.7.0" />
