@@ -12,6 +12,9 @@
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <RootNamespace />
+    <Version>3.3.4</Version>
+    <Authors>Build from base abp framework</Authors>
+    <RepositoryUrl>https://github.com/trulydata/abp</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
