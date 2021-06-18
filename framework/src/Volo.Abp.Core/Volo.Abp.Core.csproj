@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <Import Project="..\..\..\configureawait.props" />
   <Import Project="..\..\..\common.props" />
@@ -15,7 +15,7 @@
     <RepositoryUrl>https://github.com/trulydata/abp</RepositoryUrl>
     <Description>Build from base abp framework</Description>
     <Authors>David Ricardo</Authors>
-    <Version>3.3.3</Version>
+    <Version>3.3.4</Version>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="System.ComponentModel.Annotations" Version="4.7.0" />
