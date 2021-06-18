@@ -12,7 +12,6 @@ using Microsoft.Extensions.Options;
 using Nito.AsyncEx;
 using Volo.Abp.DependencyInjection;
 using Volo.Abp.ExceptionHandling;
-using Volo.Abp.MultiTenancy;
 using Volo.Abp.Threading;
 using Volo.Abp.Uow;
 
@@ -132,7 +131,7 @@ namespace Volo.Abp.Caching
             CacheName = CacheNameAttribute.GetCacheName(typeof(TCacheItem));
 
             //IgnoreMultiTenancy
-            IgnoreMultiTenancy = typeof(TCacheItem).IsDefined(typeof(IgnoreMultiTenancyAttribute), true);
+            IgnoreMultiTenancy = true;
 
             //Configure default cache entry options
             DefaultCacheOptions = GetDefaultCacheEntryOptions();

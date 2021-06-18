@@ -12,6 +12,10 @@
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <RootNamespace />
+    <Authors>David Ricardo</Authors>
+    <Version>3.3.4</Version>
+    <Description>Build from base abp framework</Description>
+    <RepositoryUrl>https://github.com/trulydata/abp</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
@@ -20,9 +24,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Volo.Abp.Json\Volo.Abp.Json.csproj" />
-    <ProjectReference Include="..\Volo.Abp.MultiTenancy\Volo.Abp.MultiTenancy.csproj" />
     <ProjectReference Include="..\Volo.Abp.Serialization\Volo.Abp.Serialization.csproj" />
     <ProjectReference Include="..\Volo.Abp.Threading\Volo.Abp.Threading.csproj" />
+    <ProjectReference Include="..\Volo.Abp.Uow\Volo.Abp.Uow.csproj" />
   </ItemGroup>
 
 </Project>

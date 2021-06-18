@@ -2,7 +2,6 @@
 using System;
 using Volo.Abp.Json;
 using Volo.Abp.Modularity;
-using Volo.Abp.MultiTenancy;
 using Volo.Abp.Serialization;
 using Volo.Abp.Threading;
 using Volo.Abp.Uow;
@@ -13,7 +12,6 @@ namespace Volo.Abp.Caching
         typeof(AbpThreadingModule),
         typeof(AbpSerializationModule),
         typeof(AbpUnitOfWorkModule),
-        typeof(AbpMultiTenancyModule),
         typeof(AbpJsonModule))]
     public class AbpCachingModule : AbpModule
     {

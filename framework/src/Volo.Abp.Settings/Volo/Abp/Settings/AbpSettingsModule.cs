@@ -3,15 +3,13 @@ using System.Collections.Generic;
 using Microsoft.Extensions.DependencyInjection;
 using Volo.Abp.Localization;
 using Volo.Abp.Modularity;
-using Volo.Abp.MultiTenancy;
 using Volo.Abp.Security;
 
 namespace Volo.Abp.Settings
 {
     [DependsOn(
         typeof(AbpLocalizationAbstractionsModule),
-        typeof(AbpSecurityModule),
-        typeof(AbpMultiTenancyModule)
+        typeof(AbpSecurityModule)
         )]
     public class AbpSettingsModule : AbpModule
     {
@@ -27,7 +25,6 @@ namespace Volo.Abp.Settings
                 options.ValueProviders.Add<DefaultValueSettingValueProvider>();
                 options.ValueProviders.Add<ConfigurationSettingValueProvider>();
                 options.ValueProviders.Add<GlobalSettingValueProvider>();
-                options.ValueProviders.Add<TenantSettingValueProvider>();
                 options.ValueProviders.Add<UserSettingValueProvider>();
             });
         }
